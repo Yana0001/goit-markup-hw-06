@@ -606,16 +606,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="ellipse-button">
-          <button type="button" class="close-button" data-modal-close>
-            <img
-              src="images/icons/close.svg"
-              alt="кнопка"
-              width="18"
-              height="18"
-            />
-          </button>
-        </div>
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-black" width="18" height="18">
+            <use href="./images/sprite.svg#close-black"></use>
+          </svg>
+        </button>
 
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
 
@@ -659,7 +654,7 @@
               class="comment"
               name="comment"
               id="comment"
-              rows="9"
+              rows="6"
               placeholder="Введіть текст"
             ></textarea>
           </div>
@@ -673,8 +668,8 @@
               />
               <span class="icon"></span>
               <span class="checkbox-agreement"
-                >Погоджуюся з розсилкою та приймаю</span
-              >
+                >Погоджуюся з розсилкою та приймаю
+              </span>
               <a href="">Умови договору</a>
             </label>
           </div>

@@ -659,31 +659,30 @@ footer a:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  padding-right: 40px;
+  padding-left: 40px;
+  /* padding-bottom: 40px; */
 }
 
-.ellipse-button {
-  position: absolute;
-  display: block;
+.close-button {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.close-button {
   background-color: transparent;
-  border-style: none;
   fill: #000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ???????????????????????????????? */
-.ellipse-button .close-button:hover {
+.close-button:hover .close-black {
   fill: var(--accent);
 }
 
@@ -693,7 +692,7 @@ footer a:focus {
   text-align: center;
 
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -774,6 +773,8 @@ footer a:focus {
 .form-btn {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
 
   width: 200px;
   height: 50px;
@@ -814,6 +815,17 @@ footer a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox-label a {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  text-indent: 0.4em;
 }
 
 .icon {
@@ -838,18 +850,9 @@ footer a:focus {
 }
 
 .checkbox-agreement {
+  padding-left: 5px;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.checkbox-agreement a {
-  font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
-  color: var(--main-theme-color);
-  text-decoration: none;
-  border-bottom: 1px solid var(--main-theme-color);
-  text-indent: 0.4em;
 }
