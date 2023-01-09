@@ -231,6 +231,7 @@ header {
 
 .content-features-link:hover .content-overlay,
 .content-features-link:focus .content-overlay {
+  /* transition-property: opacity, visibility; */
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
@@ -266,34 +267,38 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+
   background-color: rgba(33, 150, 243, 0.9);
+
   transform: translateY(100%);
   opacity: 0;
 }
 
 .text-overlay {
   display: block;
+
   margin: 63px 24px;
-  color: var(--white-color);
   width: 322px;
   height: 168px;
-  font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  align-items: center;
   letter-spacing: 0.03em;
+  align-items: center;
+
+  color: var(--white-color);
 }
 
 /* Footer */
 
 footer {
-  background-color: var(--dark-grey-color);
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 215px;
-  display: flex;
+
+  background-color: var(--dark-grey-color);
 }
 
 .footer-container {
@@ -306,24 +311,25 @@ footer {
 }
 
 .socials-title {
-  color: var(--white-color);
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
 .footer-logo {
-  font-family: Raleway;
+  display: block;
+
+  margin-bottom: 20px;
+
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
-  text-decoration: none;
-  margin-bottom: 20px;
   font-size: 26px;
-  margin-bottom: 20px;
-  display: block;
+
+  font-family: Raleway;
+  text-decoration: none;
 }
 
 .white-studio {
