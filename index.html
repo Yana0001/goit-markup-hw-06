@@ -621,55 +621,48 @@
 
         <form class="modal-form">
           <div class="form-field">
-            <input
-              class="form-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-            />
-            <label class="form-label" for="user-name">Ім'я</label>
+            <label for="name" class="form-label">Ім'я</label>
+            <input class="form-input" type="text" name="name" id="name" />
             <img
               class="form-icon"
               src="./images/icons/person.svg"
-              alt="icon"
+              alt=""
               width="18"
               height="18"
             />
           </div>
           <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
             <input class="form-input" type="tel" name="tel" id="tel" />
-            <label class="form-label" for="tel">Телефон</label>
             <img
               class="form-icon"
               src="./images/icons/phone.svg"
-              alt="icon"
+              alt=""
               width="18"
               height="18"
             />
           </div>
           <div class="form-field">
-            <input class="form-input" type="email" name="email" id="email" />
-            <label class="form-label" for="email">Пошта</label>
+            <label for="mail" class="form-label">Пошта</label>
+            <input class="form-input" type="mail" name="mail" id="mail" />
             <img
               class="form-icon"
               src="./images/icons/email.svg"
-              alt="icon"
+              alt=""
               width="18"
               height="18"
             />
           </div>
           <div class="form-field">
+            <label for="comment" class="form-label">Коментар</label>
             <textarea
-              class="form-textarea"
+              class="comment"
               name="comment"
               id="comment"
-              cols="30"
-              rows="10"
+              rows="9"
               placeholder="Введіть текст"
             ></textarea>
-            <label class="form-label-comment" for="comment">Коментар</label>
           </div>
-
           <div class="checkbox">
             <label class="checkbox-label">
               <input
@@ -679,7 +672,10 @@
                 value="agree"
               />
               <span class="icon"></span>
-              Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+              <span class="checkbox-agreement"
+                >Погоджуюся з розсилкою та приймаю</span
+              >
+              <a href="">Умови договору</a>
             </label>
           </div>
           <button class="form-btn" type="submit">Відправити</button>
