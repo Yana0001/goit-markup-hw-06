@@ -518,7 +518,6 @@
             </ul>
           </address>
         </div>
-
         <div class="footer-second-box">
           <p class="socials-title">приєднуйтесь</p>
           <ul class="footer-socials">
@@ -576,31 +575,32 @@
             </li>
           </ul>
         </div>
-      </div>
+        <div class="footer-follow">
+          <form class="footer-form">
+            <label>
+              <span class="footer-follow-subscribe"
+                >Підпишіться на розсилку</span
+              >
+              <input
+                type="text"
+                name="email"
+                placeholder="E-mail"
+                class="footer-follow-input"
+              />
+            </label>
 
-      <div class="footer-follow">
-        <form class="footer-form">
-          <label>
-            <span class="footer-follow-subscribe">Підпишіться на розсилку</span>
-            <input
-              type="text"
-              name="email"
-              placeholder="E-mail"
-              class="footer-follow-input"
-            />
-          </label>
-
-          <button type="submit" class="footer-button-subscribe">
-            Підписатися
-            <img
-              class="telegram-footer-button"
-              src="./images/icons/icon-send.svg"
-              alt=""
-              width="24"
-              height="24"
-            />
-          </button>
-        </form>
+            <button type="submit" class="footer-button-subscribe">
+              Підписатися
+              <img
+                class="telegram-footer-button"
+                src="./images/icons/icon-send.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -612,7 +612,7 @@
           </svg>
         </button>
 
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
         <form class="modal-form">
           <div class="form-field">
@@ -670,7 +670,7 @@
               <span class="checkbox-agreement"
                 >Погоджуюся з розсилкою та приймаю
               </span>
-              <a href="">Умови договору</a>
+              <a href="#">Умови договору</a>
             </label>
           </div>
           <button class="form-btn" type="submit">Відправити</button>
